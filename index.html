@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+
+<head>
+    <title> admission form</title>
+    <style>
+        .name {
+            background-color: lightpink;
+            color: black;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .reasons {
+            background-color: lightsalmon;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
+    <h1>Admission form</h1>
+    <h2>fill the form correctly</h2>
+</head>
+
+<body>
+    <h1 id="greetings"></h1>
+    <div id="body">
+        <div class="name">
+            <a href="SecondPage.html">Move second page</a>
+            <br>
+            <a href="#C4">Jump to chapter 4</a>
+            <p> fill in your name accordingingly</p>
+            <input placeholder="first name"> <br>
+            <input placeholder="last name"><br>
+            <input placeholder="surname"><br>
+        </div>
+        <p> fill in your choices of schools in order of importance</p>
+        <div class="name reasons">
+            <p>your first choice of school should go first then the rest in the spaces provided respectively</p>
+            <input placeholder="first choice"> <br>
+            <input placeholder="second choice"> <br>
+            <input placeholder="third choice"> <br>
+            <input placeholder="fourth choice">
+        </div>
+        <p>fill in your phone number or email adrress below </p>
+        <div class="name">
+            <input placeholder=" phone number or email">
+            <p>we will contact you via phone call or email</p>
+        </div>
+        <p> kindly state your reasons for selecting the schools you selected in the space provided below. This is optionanl.
+        <div class="name reasons">
+            <p>This is not compulsory</p>
+            <textarea></textarea>
+        </div>
+        <div class="name reasons">
+            <p>your first choice of school should go first then the rest in the spaces provided respectively</p>
+            <input placeholder="first choice"> <br>
+            <input placeholder="second choice"> <br>
+            <input placeholder="third choice"> <br>
+            <input placeholder="fourth choice">
+        </div>
+        <div class="name reasons">
+            <p>your first choice of school should go first then the rest in the spaces provided respectively</p>
+            <input placeholder="first choice"> <br>
+            <input placeholder="second choice"> <br>
+            <input placeholder="third choice"> <br>
+            <input placeholder="fourth choice">
+        </div>
+        <h2 id="C4">Chapter 4</h2>
+        <div class="name reasons">
+            <p>your first choice of school should go first then the rest in the spaces provided respectively</p>
+            <input placeholder="first choice"> <br>
+            <input placeholder="second choice"> <br>
+            <input placeholder="third choice"> <br>
+            <input placeholder="fourth choice">
+        </div>
+    </div>
+    <h1 id="greetings"></h1>
+   
+    <button onclick="myfunction()"> click here to submit</button>
+    <button onclick="mySecondFunction()"> Greet</button>
+    <script>
+        function myfunction() {
+            var x = document.getElementsByClassName("name");
+            for (var i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+        }
+        function mySecondFunction(){
+            var x = document.getElementById("body");
+            x.innerHTML = "Have a nice day";
+        }
+    </script>
+    <p> Due date for change of instituition is 12th of december 2022 so apply for your change of instituition before the
+        due date.</p>
+</body>
+
+</html>
